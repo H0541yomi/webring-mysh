@@ -3,6 +3,10 @@ import { readFile } from "node:fs/promises";
 const text = await readFile("./sites.txt", "utf8");
 const sites = text.split("\n").filter(Boolean) as string[];
 
+// This is literally just a serverless function that loads in `sites.txt` as a list of websites, 
+// checks where your site is using `origin`, and then returns the next/previous site based on 
+// `direction`.
+
 export function GET(request: Request) {
   const direction = new URL(request.url).searchParams.get("direction");
   const origin = new URL(request.url).searchParams.get("origin");
