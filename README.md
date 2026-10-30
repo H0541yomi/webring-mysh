@@ -10,5 +10,6 @@ If you want to add your site, open a pull request on a new branch and insert you
 `origin` must be the URL of your page.
 
 If you implemented this correctly, you don't have to be limited to arrows/buttons for navigation around the webring! You can let users navigate on scroll, on hover, or more! It's up to your imagination at this point :D
+
 ...and that's it! Welcome to our webring! 
 Also feel free to add multiple sites to the webring. They can be as small or as large as you want.
